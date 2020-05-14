@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func beforeSwitch()  {
 	var a int = 2
@@ -76,11 +78,27 @@ func switchCase4()  {
 		fmt.Printf("not a vowel")
 	}
 }
+
+func getValue() int {
+	return 10
+}
+
+func switchCase5()  {
+	switch a := getValue();a {
+	case 1,2,3,4,5,6,7,8,9,10:
+		fmt.Printf("num %d is >0 and <=10\n",a)
+	case 11,12,13,14,15,16,17,18,19,20:
+		fmt.Printf("num %d is > 10 and <=20\n",a)
+	default:
+		fmt.Printf("num %d is > 20\n",a)
+	}
+}
+
 func main() {
 	//beforeSwitch()
 	//switchCase1()
 	//switchCase2()
 	//switchCase3()
-	switchCase4()
-
+	//switchCase4()
+	switchCase5()
 }
