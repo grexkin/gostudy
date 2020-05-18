@@ -40,6 +40,21 @@ func deferTest() {
 	defer fmt.Printf("defer2\n")
 }
 
+func testDefer2()  {
+	for i:=0;i<5;i++ {
+		defer fmt.Printf("i=%d\n",i)
+	}
+	fmt.Printf("running\n")
+	fmt.Printf("return\n")
+}
+
+func testDefer3()  {
+	var i int = 0
+	defer fmt.Printf("defer i=%d\n",i)   //输出0，定义之后的修改不会影响其值
+	i = 1000
+	fmt.Printf("run i=%d\n",i)
+}
+
 func main() {
 	testFunc01()
 	res := AddFunc(100,200)  //函数调用
@@ -51,4 +66,6 @@ func main() {
 	sum2 := changeAbleArgsV2(1,2,3,4)
 	fmt.Printf("sum2=%d\n",sum2)
 	deferTest()
+	testDefer2()
+	testDefer3()
 }
