@@ -113,7 +113,7 @@ func formatStdout()  {
 
 func main() {
 	//variablesType()
-	//constDemo()
+	constDemo()
 	//boolType()
 	//intFloatType()
 	formatStdout()

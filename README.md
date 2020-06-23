@@ -5,3 +5,4 @@
 - lesson03: processcontrol and 99 乘法表。 2020-05-15
 - lesson04: functions application part1 & defer && some excise 。 2020-05-18
 - lesson05: array and sort。 2020-05-27
+- lesson06: point and use.   2020-06-22

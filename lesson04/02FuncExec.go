@@ -44,6 +44,7 @@ func narcissisticNum() {
 }
 
 func calcStrings(str string)(charCount,numCount,spaceCount,otherCounts int)  {
+	//多返回值
 	strByte := []rune(str)
 	for i := 0;i < len(strByte);i ++ {
 		if strByte[i] >= 'a' && strByte[i] <= 'z' || strByte[i] >= 'A' && strByte[i] <= 'Z' {

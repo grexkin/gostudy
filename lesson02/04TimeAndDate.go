@@ -70,15 +70,16 @@ func timeConst()  {
 
 func formatOriginal() {
 	now := time.Now()
+	namo := now.Nanosecond()
 	timeStr := now.Format("2006-01-02 15:04:05")
 	fmt.Printf("%s\n",timeStr)
 }
 
 
 func main() {
-	//getNow()
-	//formatDate()
-	//timeStamp()
+	getNow()
+	formatDate()
+	timeStamp()
 	//timeStampTransToDateTime(1219021901)
 	//tickTest()
 	//timeConst()
