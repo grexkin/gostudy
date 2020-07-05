@@ -63,6 +63,15 @@ func testpoint3()  {
 	fmt.Printf("s=%v\n",s)
 }
 
+func modifyInt(a int)  {
+	a = 100
+}
+func testpoint4()  {
+	var a int = 10
+	modifyInt(a)
+	fmt.Println(a)
+}
+
 func newPoint()  {
 	var a *int = new(int)
 	*a = 100
@@ -74,8 +83,16 @@ func newPoint()  {
 	(*s)[0] = "aaa"
 	(*s)[1] = "bbb"
 	fmt.Printf("s=%v\n",s)
-
 }
+
+func testPoint5()  {
+	var a int = 10
+	var b *int = &a
+	var c *int = &a
+	*c = 200
+	fmt.Printf("c=%d,b=%d,a=%d\n",*c,*b,a)
+}
+
 func main() {
 	//memAddr()
 	//pointDemo()
@@ -83,5 +100,7 @@ func main() {
 	//testpoint()
 	//testpoint2()
 	//testpoint3()
-	newPoint()
+	//newPoint()
+	//testpoint4()
+	testPoint5()
 }
