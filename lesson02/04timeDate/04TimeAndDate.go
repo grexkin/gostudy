@@ -70,7 +70,7 @@ func timeConst()  {
 
 func formatOriginal() {
 	now := time.Now()
-	namo := now.Nanosecond()
+	//nano := now.Nanosecond()
 	timeStr := now.Format("2006-01-02 15:04:05")
 	fmt.Printf("%s\n",timeStr)
 }
